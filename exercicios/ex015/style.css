@@ -1,0 +1,17 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=One&display=swap');
+
+body {
+background-color: aliceblue;
+font-family: 'Roboto Condensed', sans-serif;
+font-size: 20px;
+}
+h1 {
+    color: blueviolet;
+}
+h2 {
+            color: darkred;
+}
+p {
+            color:lightslategray;
+}

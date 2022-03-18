@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segunda página</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Segunda página</h1>
+    <h2>Teste de estilos</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat ab aliquid corrupti laboriosam sunt, illo
+        possimus, obcaecati nemo qui ipsum voluptatem laborum libero fugit animi dolorum fuga voluptates, earum
+        inventore.</p>
+    <p class="text-voltar"><a class="link" href="index.html" target="_self">Voltar</a></p>
+    <button onclick="vermelho('red')">Vermelho</button>
+    <button onclick="azul('blue')">Azul</button>
+    <button onclick="verde('green')">Verde</button>
+</body>
+<script>
+    function vermelho(cor) {
+        document.getElementsByClassName('text-voltar')[0].style.backgroundColor = cor
+        document.getElementsByClassName('text-voltar')[0].style.textAlign = 'center'
+        document.getElementsByClassName('link')[0].style.color = 'black'
+    }
+
+    function azul(cor) {
+        document.getElementsByClassName('text-voltar')[0].style.backgroundColor = cor
+        document.getElementsByClassName('text-voltar')[0].style.textAlign = 'left'
+        document.getElementsByClassName('text-voltar')[0].style.paddingLeft = '5px'
+        document.getElementsByClassName('link')[0].style.color = 'white'
+    }
+
+    function verde(cor) {
+        document.getElementsByClassName('text-voltar')[0].style.backgroundColor = cor
+        document.getElementsByClassName('text-voltar')[0].style.textAlign = 'right'
+        document.getElementsByClassName('text-voltar')[0].style.paddingRight = '5px'
+        document.getElementsByClassName('link')[0].style.color = 'white'
+    }
+</script>
+
+</html>
